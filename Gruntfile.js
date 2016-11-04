@@ -1,18 +1,13 @@
 module.exports = function(grunt) {
-  // requires
-  grunt.loadNpmTasks('grunt-gh-pages');
-  // grunt task configurations
+
   grunt.initConfig({
-    'gh-pages': {
-      options: {
-        base: 'dist'
-      },
-      src: ['**']
+    jshint: {
+      files: ['Gruntfile.js', 'dist/**/*.js', 'test/**/*.js']
     },
     copy: {
-      dist: {
+      build: {
         cwd: 'src',
-        src: ['**', '!**/*.css', '!**/*.js'],
+        src:  ['**'],
         dest: 'dist',
         expand: true
       }
@@ -20,31 +15,46 @@ module.exports = function(grunt) {
     clean: {
       build: {
         src: ['dist']
+      },
+      stylesheets: {
+        src: ['dist/**/*.css', '!dist/application.css']
+      },
+      scripts: {
+        src: ['dist/**/*.js', '!dist/application.js']
       }
     },
-    filerev: {
-      options: {
-        encoding: 'utf8', algorithm: 'md5', length: 20
-      },
-      release: {
-        files: [{
-          src: ['dist/scripts/*.js', 'dist/styles/*.css']
-        }]
+    cssmin: {
+      build: {
+        files: {
+          'dist/application.css': ['dist/**/*.css']
+        }
       }
-    }
-    usemin: {
-      html: ['dist/*.html'],
-      css: ['dist/styles/*.css'];
-      options: {
-        assetsDirs: ['dist', 'dist/styles'];
+    },
+    uglify: {
+      build: {
+        options: {
+          mangle: false
+        },
+        files:  {
+          'dist/application.js': ['dist/**/*.js']
+        }
       }
+    },
+    watch: {
+    
     }
-
-
-
   });
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // grant task registrations
-  grunt.registerTask('build', ['clean', 'copy', 'gh-pages']);
-  grunt.registerTask('default', ['build'])
-}
+  grunt.registerTask('default', ['jshint', 'watch']);
+  grunt.registerTask('build', ['clean:build', 'copy', 'stylesheets', 'scripts']);
+  grunt.registerTask('stylesheets', ['cssmin']);
+  grunt.registerTask('scripts', ['uglify']);
+
+
+};
