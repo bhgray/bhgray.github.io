@@ -1,0 +1,22 @@
+{
+  "name": "portfolioweb",
+  "homepage": "https://github.com/bhgray/bhgray.github.io",
+  "authors": [
+    "Brent Gray <bhgray@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "MDBootstrap": "^4.2.0"
+  }
+}
