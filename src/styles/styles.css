@@ -4,6 +4,7 @@ html, body {
   width: 100%;
 }
 /* padded section */
+/*with two values, top-bottom then left-right*/
 .pad-section {
   padding: 50px 0;
 }
@@ -27,17 +28,17 @@ html, body {
 }
 /* additional sections */
 #home {
-  background: url(../Assets/Images/app_trail.jpg) no-repeat center center fixed;
+  background: url(../images/app_trail.jpg) no-repeat center center fixed;
   display: table;
-  height: 100%;
   position: relative;
+  height: 800px;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
+
 #about {
 }
 
@@ -59,7 +60,7 @@ html, body {
 }
 
 #information {
-  background: url(../Assets/Images/cork.jpg) no-repeat center center fixed;
+  background: url(../images/cork.jpg) no-repeat center center fixed;
   display: table;
   height: 800px;
   position: relative;
