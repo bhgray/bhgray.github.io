@@ -4,136 +4,82 @@
   <meta charset="utf-8">
   <meta name="author" content="Brent Gray" />
   <title>Brent Gray</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <!--[if lt IE 9]>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <!--[if lt IE 8]>
   <link rel="stylesheet" href="stylesheets/ie.css">
   <![endif]-->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-amber.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
 
   <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles_md.css">
   <!-- endbuild -->
 </head>
 <body>
-  <!-- navpanel -->
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a href="index_md.html" class="navbar-brand">Brent Gray</a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbar-collapse-main">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#information">Information</a></li>
-        </ul>
-      </div> <!-- /.navbar-collapse -->
-    </div> <!-- /.container-fluid -->
-  </nav>
 
-  <!-- first section - Home -->
-  <div id="home">
-    <div class="text-vcenter">
-      <h1>Welcome</h1>
-      <h3> This is a test of the gh-pages grunt task.... Eu consectetur aute mollit reprehenderit fugiat nostrud reprehenderit.</h3>
-      <a href="#about" class="btn btn-lg btn-blue-grey">Continue</a>
-    </div>
-  </div>
-  <!-- end home section -->
-  <!-- second section - about -->
-  <div class="pad-section" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <img src="images/logo.png" alt="" />
-        </div>
-        <div class="col-sm-6 text-center">
-          <h2>Do culpa eu commodo eiusmod tempor labore ea.</h2>
-          <p>Commodo Lorem pariatur elit esse velit non laboris reprehenderit qui laboris ipsum incididunt velit cupidatat fugiat excepteur. Veniam et fugiat dolore culpa amet proident duis ullamco aute amet consectetur est occaecat ex Lorem. Sint aliquip commodo minim fugiat enim labore nisi consectetur. Fugiat non et aliquip culpa nulla consequat laborum qui occaecat voluptate. Culpa sit mollit officia cillum nisi occaecat et esse culpa mollit. Anim et anim mollit excepteur ea excepteur non ut enim. Aliqua occaecat adipisicing adipisicing duis adipisicing fugiat labore ullamco et do amet.</p>
-        </div>
+  <div class="mdl-layout mdl-layout--fixed-header mdl-js-layout">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Brent Gray</span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="#">Home</a>
+          <a class="mdl-navigation__link" href="#">About</a>
+          <a class="mdl-navigation__link" href="#">Projects</a>
+          <a class="mdl-navigation__link" href="#">Contact</a>
+        </nav>
       </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Brent Gray</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#">Home</a>
+        <a class="mdl-navigation__link" href="#">About</a>
+        <a class="mdl-navigation__link" href="#">Projects</a>
+        <a class="mdl-navigation__link" href="#">Contact</a>
+      </nav>
     </div>
-  </div>
-  <!-- end about section -->
-  <!-- projects section -->
-  <div id="projects" class="pad-section">
-    <div class="container">
-      <h2 class="txt-center">
-        Projects
-      </h2>
-      <hr />
-      <div class="row text-center">
-        <div class="col-sm-3 col-xs-6">
-          <i class="glyphicon glyphicon-cloud"></i>
-          <h4>Project 1</h4>
-          <p>Commodo minim cupidatat ex officia magna incididunt elit occaecat.</p>
-        </div>
-        <div class="col-sm-3 col-xs-6">
-          <i class="glyphicon glyphicon-cloud"></i>
-          <h4>Project 2</h4>
-          <p>Dolor quis nulla amet deserunt reprehenderit adipisicing laborum nisi fugiat anim sunt nulla ut exercitation officia.</p>
-        </div>
-        <div class="col-sm-3 col-xs-6">
-          <i class="glyphicon glyphicon-cloud"></i>
-          <h4>Project 3</h4>
-          <p>Ex qui labore nulla id exercitation exercitation tempor.</p>
-        </div>
-        <div class="col-sm-3 col-xs-6">
-          <i class="glyphicon glyphicon-cloud"></i>
-          <h4>Project 4</h4>
-          <p>Ullamco enim do qui occaecat sit occaecat fugiat.</p>
-        </div>
 
-      </div>
-    </div>
-  </div>
-  <!-- end of third section -->
-  <!-- fourth section - Information -->
-  <div id="information" class="pad-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h2 class="panel-title">Additional information</h2>
-            </div>
-            <div class="panel-body lead">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h2 class="panel-title">Additional information</h2>
-            </div>
-            <div class="panel-body lead">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /information -->
-  <footer>
-    <hr />
-    <div class="container">
-      <p class="text-right">Copyright &copy; Brent Gray 2016</p>
-    </div>
-  </footer>
-  <!-- /footer -->
 
+  </div>  <!-- end of mdl-layout -->
+  div.
+  <div class="mdl-card">
+    <div class="mdl-card__title">
+       <h2 class="mdl-card__title-text">Auckland Sky Tower<br>Auckland, New Zealand</h2>
+    </div>
+    <div class="mdl-card__media">
+      <img src="images/logo.png" width="173" height="157" border="0" alt=""
+       style="padding:10px;">
+    </div>
+    <div class="mdl-card__supporting-text">
+    The Sky Tower is an observation and telecommunications tower located in Auckland,
+    New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
+    in the Southern Hemisphere.
+    </div>
+    <div class="mdl-card__actions">
+       <a href="http://en.wikipedia.org/wiki/Sky_Tower_%28Auckland%29">Wikipedia entry</a>
+    </div>
+  </div>
+
+  <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">BHG</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">Brent Gray 2016</a></li>
+    </ul>
+  </div>
+</footer>
   <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
   <!-- build:js scripts/main.js -->
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="bower_components/MDBootstrap/js/mdb.min.js"></script>
+
   <!-- endbuild -->
 </body>
 </html>
