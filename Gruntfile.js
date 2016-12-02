@@ -143,7 +143,7 @@ module.exports = function(grunt) {
           base: {
             path: 'dist',
             options: {
-              index: 'index_md.html',
+              index: 'index.html',
               maxAge: 300000
             }
           }
