@@ -1,6 +1,6 @@
 .portfolio-header {
   position: relative;
-  background-image: url(images/header-bg.jpg);
+  background-image: url(../images/header-bg.jpg);
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -11,7 +11,7 @@
 }
 
 .mdl-layout__title {
-  font-size: 14px;
+  font-size: 28px;
   text-align: center;
   font-weight: 300;
 }
@@ -29,12 +29,24 @@
 }
 
 .portfolio-logo {
-  background: url(images/logo.png) 50% no-repeat;
+  text-shadow: rgb(179, 69, 6) 0px 0px 0px, rgb(182, 70, 6) 1px 1px 0px, rgb(185, 71, 6) 2px 2px 0px, rgb(188, 72, 6) 3px 3px 0px, rgb(191, 74, 6) 4px 4px 0px, rgb(194, 75, 6) 5px 5px 0px, rgb(198, 76, 6) 6px 6px 0px, rgb(201, 77, 6) 7px 7px 0px, rgb(204, 78, 6) 8px 8px 0px, rgb(207, 80, 7) 9px 9px 0px, rgb(210, 81, 7) 10px 10px 0px, rgb(214, 82, 7) 11px 11px 0px, rgb(217, 83, 7) 12px 12px 0px, rgb(220, 85, 7) 13px 13px 0px, rgb(223, 86, 7) 14px 14px 0px, rgb(226, 87, 7) 15px 15px 0px, rgb(230, 88, 7) 16px 16px 0px, rgb(233, 89, 7) 17px 17px 0px, rgb(236, 91, 7) 18px 18px 0px, rgb(239, 92, 8) 19px 19px 0px, rgb(242, 93, 8) 20px 20px 0px, rgb(245, 94, 8) 21px 21px 0px, rgb(249, 96, 8) 22px 22px 0px, rgb(252, 97, 8) 23px 23px 0px;
+  font-size: 85px;
+  color: rgb(255, 255, 255);
+  height: 177px;
+  width: 177px;
+  line-height: 177px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgb(255, 98, 8);
+}
+
+/*.portfolio-logo {
+  background: url(../images/logo.png) 50% no-repeat;
   background-size: cover;
   height: 150px;
   width: 150px;
   margin: auto auto 10px;
-}
+}*/
 
 .is-compact .portfolio-logo {
   height: 50px;
@@ -87,15 +99,15 @@
 }
 
 .portfolio-blog-card-full-bg {
-  background: url(images/example-blog03.jpg) center / cover;
+  background: url(../images/example-blog03.jpg) center / cover;
 }
 
 .portfolio-blog-card-event-bg {
-  background: url(images/example-blog05.jpg) center / cover;
+  background: url(../images/example-blog05.jpg) center / cover;
 }
 
 .portfolio-blog-card-strip-bg {
-  background: url(images/example-blog06.jpg) center / cover;
+  background: url(../images/example-blog06.jpg) center / cover;
 }
 
 .portfolio-blog-card-compact .mdl-card__title {
@@ -164,7 +176,6 @@ img.article-image {
 }
 
 footer {
-  background-image: url(images/footer-background.png);
+  background-image: url(../images/footer-background.png);
   background-size: cover;
 }
-
